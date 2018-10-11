@@ -16,6 +16,18 @@ node_js:
   - "8.11"
   - "9.11"
 sudo: false
+matrix:
+  exclude:
+  - os: linux-ppc64le
+    node_js: "0.8"
+  - os: linux-ppc64le
+    node_js: "0.10"
+  - os: linux-ppc64le
+    node_js: "0.12"
+  - os: linux-ppc64le
+    node_js: "1.8"
+  - os: linux-ppc64le
+    node_js: "2.5"
 cache:
   directories:
     - node_modules
